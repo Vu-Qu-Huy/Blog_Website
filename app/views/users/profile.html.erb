@@ -1,0 +1,17 @@
+<div class="jumbotron">
+  <h1 class="display-4"><%= @user.name %></h1>
+  <p class="lead">Email: <%= @user.email %></p>
+ <p class="lead">The account was created on <%= @user.created_at.strftime("%B %d, %Y") %></p>
+   <p class="lead">Posts: <%= @user.posts.count %> - This user has posted <%= @user.posts.count %> posts</p>
+  <p class="lead">Comments: <%= @user.comments.count %> - This user has engaged in  <%= @user.comments.count %> comments</p>
+  <p class="lead">Likes: <%= @user.likes.count %> - This user has liked <%= @user.likes.count %> times</p>
+  <p class="lead">Views: <%= @user.views %> - The number of views on this user’s posts is <%= @user.views %></p>
+  
+  <hr class="my-4">
+
+  <p class="lead">You can contact this user directly via their email address for any inquiries or connections.</p>
+  
+  <p class="lead">
+    <%= link_to "Back to information", home_path, class: "btn btn-primary" %>
+  </p>
+

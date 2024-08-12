@@ -1,0 +1,39 @@
+<%= form_with(model: post, class: "container mt-4") do |form| %>
+  <% if post.errors.any? %>
+    <div id="error_explanation" class="alert alert-danger">
+      <h4><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h4>
+
+      <ul>
+        <% post.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="mb-3">
+    <%= form.label :title, class: "form-label" %>
+    <%= form.text_field :title, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :body, class: "form-label" %>
+    <%= form.rich_text_area :body, rows: 4, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :preview_image, class: "form-label" %>
+    <%= form.file_field :preview_image, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :tags, class: "form-label" %>
+    <%= form.text_field :tags, value: post.tags.map(&:name).join(","), class: "form-control" %>
+  </div>
+
+  <%= form.hidden_field :user_id, id: :posts_user_id, value: current_user.id %>
+
+  <div class="mb-3">
+    <%= form.submit class: "btn btn-primary" %>
+  </div>
+<% end %>
