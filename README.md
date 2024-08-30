@@ -10,6 +10,7 @@ All user-facing text has been translated into Japanese.
 主な変更点:
 ユーザー向けのテキストはすべて日本語に翻訳されました。
 
+![Languages](app/assets/images/Languages.gif)
 
 # Blog Website Overview
 
