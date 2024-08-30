@@ -1,7 +1,7 @@
 <%= form_with(model: post, class: "container mt-4") do |form| %>
   <% if post.errors.any? %>
     <div id="error_explanation" class="alert alert-danger">
-      <h4><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h4>
+      <h4><%= pluralize(post.errors.count, t('posts.errors.count')) %> <%= t('posts.errors.prohibited_save') %></h4>
 
       <ul>
         <% post.errors.each do |error| %>
@@ -28,12 +28,12 @@
 
   <div class="mb-3">
     <%= form.label :tags, class: "form-label" %>
-    <%= form.text_field :tags, value: post.tags.map(&:name).join(","), class: "form-control" %>
+    <%= form.text_field :tags, value: post.tags.map(&:name).join(","), class: "form-control"%>
   </div>
 
   <%= form.hidden_field :user_id, id: :posts_user_id, value: current_user.id %>
 
   <div class="mb-3">
-    <%= form.submit class: "btn btn-primary" %>
+    <%= form.submit t('helpers.submit.create'), class: "btn btn-primary" %>
   </div>
 <% end %>

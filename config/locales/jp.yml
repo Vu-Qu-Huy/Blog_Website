@@ -1,0 +1,203 @@
+jp:
+  welcome:
+    title: "私のブログサイトへようこそ"
+    hero:
+      title: "私のブログサイトを発見する"
+      subtitle: "さまざまな投稿を探し、交流し、関わってください。"
+    buttons:
+      view_posts: "投稿を見る"
+      new_post: "新しい投稿"
+      login: "ログイン"
+      sign_up: "サインアップ"
+  features:
+    blog_posts:
+      title: "ブログ投稿"
+      description: "興味のあるトピックに関するさまざまなブログ投稿を読んで探索します。投稿の閲覧にはログイン不要です。"
+    comments:
+      title: "コメント"
+      description: "投稿にコメントして意見を共有します。ディスカッションに参加するにはログインが必要です。"
+    likes:
+      title: "いいね"
+      description: "投稿に「いいね」をして感謝の意を示します。いいね機能を利用するにはログインが必要です。"
+    tags:
+      title: "タグ"
+      description: "さまざまなタグやカテゴリを通じて投稿を探索し、簡単にナビゲートします。"
+    search:
+      title: "検索バー"
+      description: "効率的な検索機能を使用して特定の投稿を迅速に見つけます。"
+    login_required:
+      title: "ログインが必要"
+      description: "投稿にコメントや「いいね」をするにはログインが必要です。投稿の閲覧は誰でもできます。"
+  navbar:
+    title: "Railsブログ"
+    toggle_label: "ナビゲーションを切り替える"
+    blog: "ブログ"
+    about: "アバウト"
+    post: "投稿"
+    new_post: "新しい投稿"
+    profile: "プロフィール"
+    edit_user: "ユーザーを編集"
+    sign_out: "サインアウト"
+    log_in: "ログイン"
+    log_in_or_sign_up: "ログインまたはサインアップ"
+    language: "言語"
+
+  search:
+    label: "検索:"
+    placeholder: "検索キーワードを入力"
+    submit: "検索"
+
+  posts:
+    image_alt: "%{title}の画像"
+    read_more: "続きを読む"
+
+  time_ago_in_words: "前"
+
+  likes:
+    one: "いいね"
+    other: "いいね"
+
+  widgets:
+    categories: "カテゴリー"
+    quote_of_the_day: "今日の名言"
+
+  pagination:
+    newer: "新しい"
+    older: "古い"
+
+  sessions:
+    sign_in:
+      title: "アカウントにサインイン"
+      email: "メールアドレス"
+      password: "パスワード"
+      remember_me: "ログイン状態を保持する"
+      forgot_password: "パスワードを忘れた場合"
+      sign_up: "サインアップ"
+
+  registrations:
+    new:
+      title: "サインアップ"
+      email: "メールアドレス"
+      name: "名前"
+      password: "パスワード"
+      password_confirmation: "パスワード確認"
+      submit: "サインアップ"
+      sign_in: "サインイン"
+      password_placeholder: "パスワード: 最低8文字"
+      password_confirmation_placeholder: "パスワード確認"
+
+  users:
+    profile:
+      title: "ユーザープロフィール"
+      email: "メールアドレス"
+      account_created: "アカウントは %{date} に作成されました"
+      posts: "投稿数: %{count} - このユーザーは %{count} 件の投稿をしています"
+      comments: "コメント数: %{count} - このユーザーは %{count} 件のコメントをしています"
+      likes: "いいね数: %{count} - このユーザーは %{count} 回いいねをしています"
+      views: "ビュー数: %{count} - このユーザーの投稿のビュー数は %{count} 回です"
+      contact_message: "お問い合わせや接続のために、メールアドレスでこのユーザーに直接連絡できます。"
+      back_link: "情報に戻る"
+  
+  posts:
+    posted_by: "投稿者:"
+    time_label: "時間:"
+    tags_label: "タグ:"
+    view: "ビュー"
+    like: "いいね"
+    unlike: "いいね解除"
+    read_more: "続きを読む"
+
+  new_post:
+    new_post: "新しい投稿"
+
+  yours:
+    your_post: "あなたの投稿"
+
+
+  new_posts:
+    title: "タイトル"
+    body: "本文"
+    preview_image: "プレビュー画像"
+    tags: "タグ"
+    errors:
+      count: "エラー"
+      prohibited_save: "この投稿の保存を禁止しました:"
+  helpers:
+    submit:
+      create: "投稿を作成"
+      update: "投稿を更新"
+
+  date:
+    day_names:
+      - 日曜日
+      - 月曜日
+      - 火曜日
+      - 水曜日
+      - 木曜日
+      - 金曜日
+      - 土曜日
+    abbr_day_names:
+      - 日
+      - 月
+      - 火
+      - 水
+      - 木
+      - 金
+      - 土
+    month_names:
+      - 
+      - 1月
+      - 2月
+      - 3月
+      - 4月
+      - 5月
+      - 6月
+      - 7月
+      - 8月
+      - 9月
+      - 10月
+      - 11月
+      - 12月
+    abbr_month_names:
+      - 
+      - 1月
+      - 2月
+      - 3月
+      - 4月
+      - 5月
+      - 6月
+      - 7月
+      - 8月
+      - 9月
+      - 10月
+      - 11月
+      - 12月
+  time:
+    formats:
+      long: '%Y年%m月%d日（%A）'
+      short: '%m/%d'
+
+  datetime:
+    distance_in_words:
+      about_x_hours: 約%{count}時間
+      about_x_months: 約%{count}ヶ月
+      about_x_years: 約%{count}年
+      almost_x_years: "%{count}年弱"
+      half_a_minute: 30秒前後
+      less_than_x_seconds: "%{count}秒未満"
+      less_than_x_minutes: "%{count}分未満"
+      over_x_years: "%{count}年以上"
+      x_seconds: "%{count}秒"
+      x_minutes: "%{count}分"
+      x_days: "%{count}日"
+      x_months: "%{count}ヶ月"
+      x_years: "%{count}年"
+
+  replies:
+    submit: "返信"
+
+  comments:
+    posted: "%{time_ago}前に投稿"
+    delete_button: "削除"
+
+
