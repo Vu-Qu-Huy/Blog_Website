@@ -1,0 +1,43 @@
+<div id="<%= dom_id(post) %>" class="container mt-4">
+  <div class="card mb-4">
+    <div class="card-header">
+      <h2 class="card-title"><%= post.title %></h2>
+      <h4 class="card-subtitle mb-2 text-muted">
+        <%= t('posts.posted_by')  %><%= link_to post.user.name, user_path(post.user), class: "text-primary" %>
+      </h4>
+      <h6 class="card-subtitle mb-2 text-muted">
+        <%= pluralize(post.views, t('posts.view')) %>
+      </h6>
+    </div>
+
+    <div class="card-body">
+     <p class="card-text">
+  <strong><%= t('posts.time_label') %></strong>
+  <%= l(post.time, format: :long) %>
+</p>
+
+      <p class="card-text">
+        <%= post.body %>
+      </p>
+
+      <div>
+        <strong><%= t('posts.tags_label') %></strong>
+        <% post.tags.each do |tag| %>
+          <%= link_to tag.name, about_path(tag_id: tag.id), class: "badge bg-primary text-decoration-none me-2" %>
+        <% end %>
+      </div>
+
+      <div class="d-flex flex-column align-items mt-4">
+        <% if user_signed_in? %>
+          <% if post.likes.exists?(user_id: current_user.id) %>
+            <%= button_to t('posts.unlike'), post_like_path(post, post.likes.find_by(user_id: current_user.id)), method: :delete, class: 'btn btn-danger btn-sm' %>
+          <% else %>
+            <%= button_to t('posts.like'), post_likes_path(post), method: :post, class: 'btn btn-primary btn-sm' %>
+          <% end %>
+        <% end %>
+
+        <p class="mt-2"><%= pluralize(post.likes.count, t('posts.like')) %></p>
+      </div>
+    </div>
+  </div>
+</div>

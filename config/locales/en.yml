@@ -1,0 +1,163 @@
+en:
+  welcome:
+    title: "Welcome to My Blog Website"
+    hero:
+      title: "Discover My Blog Website"
+      subtitle: "Explore a range of posts, engage and interact with it."
+    buttons:
+      view_posts: "View Posts"
+      new_post: "New Post"
+      login: "Log In"
+      sign_up: "Sign Up"
+  features:
+    blog_posts:
+      title: "Blog Posts"
+      description: "Read and explore various blog posts on topics of interest. No login required to view posts."
+    comments:
+      title: "Comments"
+      description: "Share your thoughts by commenting on posts. Log in to participate in discussions."
+    likes:
+      title: "Likes"
+      description: "Express your appreciation by liking posts. Log in to use the like feature."
+    tags:
+      title: "Tags"
+      description: "Explore posts through various tags and categories for easy navigation."
+    search:
+      title: "Search Bar"
+      description: "Find specific posts quickly using our efficient search functionality."
+    login_required:
+      title: "Login Required"
+      description: "Login is needed to comment and like posts. Viewing posts is open to everyone."
+  navbar:
+    title: "Rails Blog"
+    toggle_label: "Toggle navigation"
+    blog: "Blog"
+    about: "About"
+    post: "Post"
+    new_post: "New Post"
+    profile: "Profile"
+    edit_user: "Edit User"
+    sign_out: "Sign out"
+    log_in: "Log in"
+    log_in_or_sign_up: "Log In or Sign Up"
+    language: "Language"
+    language_english: "English"
+    language_japanese: "日本語"
+  
+
+  search:
+    label: "Search:"
+    placeholder: "Enter search terms"
+    submit: "Search"
+
+  posts:
+    image_alt: "Image for %{title}"
+    read_more: "Read more"
+
+  time_ago_in_words: "ago"
+
+  likes:
+    one: "Like"
+    other: "Likes"
+
+  widgets:
+    categories: "Categories"
+    quote_of_the_day: "Quote of the Day"
+
+  pagination:
+    newer: "Newer"
+    older: "Older"
+
+  sessions:
+    sign_in:
+      title: "Sign in to your account"
+      email: "Email"
+      password: "Password"
+      remember_me: "Remember me"
+      forgot_password: "Forgot your password?"
+      sign_up: "Sign up"
+
+  registrations:
+    new:
+      title: "Sign Up"
+      email: "Email"
+      name: "Name"
+      password: "Password"
+      password_confirmation: "Confirm Password"
+      submit: "Sign up"
+      sign_in: "Sign in"
+      password_placeholder: "Password: 8 characters minimum"
+      password_confirmation_placeholder: "Confirm Password"
+
+  users:
+    profile:
+      title: "User Profile"
+      email: "Email"
+      account_created: "The account was created on %{date}"
+      posts: "Posts: %{count} - This user has posted %{count} posts"
+      comments: "Comments: %{count} - This user has engaged in %{count} comments"
+      likes: "Likes: %{count} - This user has liked %{count} times"
+      views: "Views: %{count} - The number of views on this user’s posts is %{count}"
+      contact_message: "You can contact this user directly via their email address for any inquiries or connections."
+      back_link: "Back to information"
+  
+  posts:
+    posted_by: "Posted by "
+    time_label: "Time:"
+    tags_label: "Tags:"
+    view: "view"
+    like: "Like"
+    unlike: "Unlike"
+
+  new_post:
+    new_post: "New Post"
+  yours:
+    your_post: "Your Post"
+  
+  new_posts:
+    title: "Title"
+    body: "Body"
+    preview_image: "Preview Image"
+    tags: "Tags"
+    errors:
+      count: "error"
+      prohibited_save: "prohibited this post from being saved:"
+  helpers:
+    submit:
+      create: "Create Post"
+      update: "Update Post"
+
+  time:
+    formats:
+      own: "%H:%M:%S, %d %B %Y"
+      default: "%m-%d-%Y"
+      long: "%B %d, %Y"
+      short: "%m/%d"
+
+  datetime:
+    distance_in_words:
+      about_x_hours: "about %{count} hours"
+      about_x_months: "about %{count} months"
+      about_x_years: "about %{count} years"
+      almost_x_years: "almost %{count} years"
+      half_a_minute: "half a minute"
+      less_than_x_seconds: "less than %{count} seconds"
+      less_than_x_minutes: "less than %{count} minutes"
+      over_x_years: "over %{count} years"
+      x_seconds: "%{count} seconds"
+      x_minutes: "%{count} minutes"
+      x_days: "%{count} days"
+      x_months: "%{count} months"
+      x_years: "%{count} years"
+
+  replies:
+    submit: "Reply"
+
+  comments:
+    posted: "Posted %{time_ago}"
+    delete_button: "Delete"
+    
+
+    
+
+  

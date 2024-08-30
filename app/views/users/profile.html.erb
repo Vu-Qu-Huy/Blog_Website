@@ -1,0 +1,17 @@
+<div class="jumbotron">
+  <h1 class="display-4"><%= @user.name %></h1>
+  <p class="lead"><%= t('users.profile.email') %>: <%= @user.email %></p>
+  <p class="lead"><%= t('users.profile.account_created', date: @user.created_at.strftime("%B %d, %Y")) %></p>
+  <p class="lead"><%= t('users.profile.posts', count: @user.posts.count) %></p>
+  <p class="lead"><%= t('users.profile.comments', count: @user.comments.count) %></p>
+  <p class="lead"><%= t('users.profile.likes', count: @user.likes.count) %></p>
+  <p class="lead"><%= t('users.profile.views', count: @user.views) %></p>
+  
+  <hr class="my-4">
+
+  <p class="lead"><%= t('users.profile.contact_message') %></p>
+  
+  <p class="lead">
+    <%= link_to t('users.profile.back_link'), home_path, class: "btn btn-primary" %>
+  </p>
+</div>
