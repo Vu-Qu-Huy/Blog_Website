@@ -1,3 +1,16 @@
+# Updates 
+## August 2024 - Japanese Language Support Added! 🇯🇵
+
+Key Changes:
+All user-facing text has been translated into Japanese.
+
+# アップデート
+## 2024年8月 - 日本語サポートが追加されました！🇯🇵
+
+主な変更点:
+ユーザー向けのテキストはすべて日本語に翻訳されました。
+
+
 # Blog Website Overview
 
 ## Introduction
